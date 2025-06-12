@@ -360,8 +360,8 @@ gen_random4() {
 }
 
 find_python() {
-    python2_path='/usr/bin/python'
-    python3_path='/usr/bin/python3'
+    python2_path='/usr/bin/python -S '
+    python3_path='/usr/bin/python3 -S '
 
     if [ -e "${python3_path}" ]; then
         echo "${python3_path}"
